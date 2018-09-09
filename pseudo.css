@@ -1,0 +1,13 @@
+p{
+    color:"#333333";
+    padding: 3em;
+
+
+}
+div:hover p{
+    color:"#444444";
+    
+}
+p i:first-child{
+    color:rgb(21, 255, 0);
+}

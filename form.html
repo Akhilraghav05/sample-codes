@@ -1,0 +1,95 @@
+<!-- <html>
+    <head>
+        <link rel="stylesheet" href="form1.css">
+
+        
+
+    </head>
+    <body>
+        <div class="align">
+        <title>
+            SIGN-UP-FORM
+        </title>
+        
+        <form>
+        <img src="gpcet1.png" height=50px width=150px><br>
+
+        Firstname:
+        <input type="text" name="firstname"><br>
+        Lastname:
+        <input type="text" name="lastname"><br>
+        <input type="radio" name="button" value="male">male
+        <input type="radio" name="button" value="female">female
+        <input type="radio" name="button" value="other">others<br><br>
+        Branch: <select name="branch">
+                <option value="ECE">Ece</option>
+                <option value="CSE">Cse</option>
+                <option value="CIVIL">Civil</option>
+                <option value="MECH">Mech</option>
+              </select><br><br>
+              DOB:<input type="date"name="birthdate">
+              Suggestions:  <textarea name="message"style="width:20px height: 50px">
+              </textarea><br><br>
+              DOJ:<input type="date" name="1stday" max="2018-06-17"><br><br>
+            
+            
+              
+        <input type="submit"value="submit"><br>
+       </form>
+        </div>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="form1.css">
+</head>
+<body>
+
+<h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
